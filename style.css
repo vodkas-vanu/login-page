@@ -1,0 +1,251 @@
+*{  
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+
+.head{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:25px 12.5%;
+    display:flex;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+}
+
+.navbar a::after{
+    content:'';
+    left:0;
+    width:100%;
+    height: 1px;
+    border-radius: 4px;
+    background:white;
+    position: absolute;
+    bottom: -6px;
+    opacity: 0;
+    transition: .4s;
+}
+.navbar a:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.search{
+    width:250px;
+    height:40px;
+    background:transparent;
+    border:2px solid white;
+    border-radius: 7px;
+     align-items: center;
+     display: flex;
+}
+
+.search input{
+    width:100%;
+    background:transparent;
+    border:none;
+    color:white;
+      outline:none;
+      font-size: 16px;
+}
+
+.search input ::placeholder{
+    color: white;
+}
+
+.search button{
+    font-size: 25px;
+    background:transparent;
+    border: none;
+    color:white;
+}
+
+.container{
+    position: absolute;
+    height:520px;
+    width:75%;
+    background: Url('pexels-ima.jpg') no-repeat;
+    left:12.5%;
+    top:12.5%;
+    margin-top: 30px;
+    border-radius: 15px;
+    
+}
+
+
+
+.container .content{
+    position: absolute;
+    height:100%;
+    width:56%;
+    background:transparent;
+    color: white;
+    padding:80px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container .log-box{
+    position: absolute;
+    right:0;
+    width:calc(100% - 56%);
+    height:100%;
+    background:transparent;
+    
+}
+
+.content .paragraph{
+    margin-top: 100px;
+}
+
+.paragraph p{
+    font-size: 17px;
+}
+
+.container .social-media{
+    font-size: 23px;
+    margin-right: 20px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+ .social-media a{
+    color:grey;
+}
+
+
+.social-media a:hover{
+    transform: scale(1.2);
+    font-size: 20px;
+    color:white;
+}
+
+.form-box-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+    color:white;
+}
+
+.form-box-login h2{
+    margin-bottom: 30px;
+    font-size: 32px;
+    justify-content: center;
+}
+
+.form-box-login .input-box{
+    position: relative;
+    width:340px;
+    height:50px;
+    border-bottom: 2px solid white;
+}
+
+.input-box input{
+    width:100%;
+    height:100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color:white;
+
+}
+.input-box .icon{
+    right:0;
+}
+
+.input-box label{
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    transition: .5s ease;
+    font-weight: 400;
+    color: white;
+}
+
+ .input-box input:focus~label,
+  .input-box input:valid~label{
+    top:-2px;
+  }
+.input-box .icon{
+    right:0;
+    
+}
+
+.form-box-login .other-way{
+    margin-top: 30px;
+}
+
+.other-way{
+    margin:-15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.other-way a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.other-way a:hover{
+    text-decoration: underline;
+}
+
+ .form-box-login button{
+    
+    width:100%;
+    height: 30px;
+    background:transparent;
+    border:none;
+    font-weight: 300;
+    font-size: 15px;
+    color: aliceblue;
+    box-shadow: 25px grey;
+}
+
+.form-box-login button:hover{
+    background: red;
+}
+
+.signup{
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    right: 5px;
+}
+
+.signup a{
+    color: white;
+    text-decoration: none;
+}
+
+.signup .sig:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.signup button{
+    background: transparent;
+    border:none;
+    
+}
